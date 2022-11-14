@@ -7,20 +7,34 @@
   int bomba1=0;
 
 struct nivel { //sensor de nivel
- char nivel_min;
- char nivel_max;
+ int nivel_min;
+ int nivel_max;
+ int nivel_cisterna;
 };
-void bomba1_on (void);
 
-void bomba1_on (void)
+
+// prototipos
+
+int obtener_nivel (int);
+
+void encendido_automatico_bombo (int, int);
+
+//funciones
+
+
+int obtener_nivel (int valor_cargado)//leo el nivel
 {
-    bomba1=ON;
-}
-void bomba1_off (void);
-void bomba1_off (void)
-{
-    bomba1=OFF;
+    int nivel=0;
+    if (valor_cargado==1)
+        nivel = 1;
+    return nivel;
 }
 
+void encendido_automatico_bombo (int a, int b)
+{
+    if (a==1 && b==1)
+        bomba1=ON;
+
+}
 
 #endif // MY_LIB_H
