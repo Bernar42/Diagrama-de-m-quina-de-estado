@@ -7,7 +7,7 @@ int main(void) {
     //seteo los niveles de los sensores manualmante
 
     sensor1.nivel_min=1;// si 0, indica que hay agua
-    sensor1.nivel_max=0;// si 0, indica que hay agua
+    sensor1.nivel_max=0;// si 1, indica que esta lleno
     sensor1.nivel_cisterna=1;
 
     int nivel_actual=0;// lo use como aux para guardar el valor devuelto por la funcion "obtener_nivel"
