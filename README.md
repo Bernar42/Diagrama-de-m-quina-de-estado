@@ -22,9 +22,9 @@ otro  estado llamado "encender_bomba", el cual dará la orden de encender el mot
 
 	typedef struct  { //sensor de nivel
 
-	 char nivel_de_agua;
- 	 char nivel_cisterna;
- 	 char n_set;
+	 char nivel_de_agua; 	//nivel de agua en el sensor
+ 	 char nivel_cisterna;	//nivel de agua en el tanque cisterna
+ 	 char n_set;		//nivel de agua seteado en la configuracion
 	}nivel_t;
 
 
@@ -89,7 +89,7 @@ otro  estado llamado "encender_bomba", el cual dará la orden de encender el mot
 	estados_t apagar_bomba_f(nivel_t){
 
   	  nivel_t;
-    	if(nivel_cisterna = 1 && nivel_de_agua < n_set){
+    	if(nivel_cisterna = 1 && nivel_de_agua = n_set){ // en mi sistema, el tanque esta lleno o vacio, siendo que deberia de estar siempre lleno
     	    estado = OFF;
     	}
 
