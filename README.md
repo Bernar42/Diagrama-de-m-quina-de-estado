@@ -1,4 +1,4 @@
-# Diagrama-de-m-quina-de-estado
+# Controlador de nivel de tanque de agua
 
 Mi idea era crear un struct donde se almacenen los datos leidos por el sensor,
 los niveles de agua del tanque y si hay agua disponible en el tanque cisterna de donde la bomba succionará el agua
