@@ -7,6 +7,7 @@ Esos niveles serán para detectar si el tanque esta lleno o no lo está.
 Por el diseño elegido el tanque siempre estará lleno.
 
 
-![image](https://user-images.githubusercontent.com/111571047/202871468-457547b9-310a-41d3-8450-3654aad525e0.png)
+[TP1.pdf](https://github.com/Bernar42/Diagrama-de-m-quina-de-estado/files/10047947/TP1.pdf)
+
 
 Donde "n" hace enfásis en nivel
