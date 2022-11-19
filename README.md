@@ -72,7 +72,8 @@ otro  estado llamado "encender_bomba", el cual dará la orden de encender el mot
 			n_set 1 // deberia de estar siempre lleno
  	
 > Funciones de estado
-		estados_t encender_bomba_f(nivel_t){
+	
+	estados_t encender_bomba_f(nivel_t){
   	  nivel_t;
 
  	   if(nivel_cisterna = 1 && nivel_de_agua < n_set){
