@@ -52,11 +52,11 @@ otro  estado llamado "encender_bomba", el cual dará la orden de encender el mot
 	{
   	      switch (estado)
     	    {
-      	  case encender_bomba_f:
+      	  case ON:
         	    estado=encender_bomba_f(config);
           	  break;
 
-	        case apagar_bomba_f:
+	        case OFF:
   	          estado=apagar_bomba_f(config);
     	        break;
       	  default:
