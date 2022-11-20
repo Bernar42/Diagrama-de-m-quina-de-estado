@@ -37,7 +37,7 @@ otro  estado llamado "encender_bomba", el cual dará la orden de encender el mot
 
 	#endif // MY_LIB_H
 
-> Archivo main.c
+> Archivo main.c con switch
 
 	#include <stdio.h>
 	#include "my_lib.h"
@@ -66,6 +66,19 @@ otro  estado llamado "encender_bomba", el cual dará la orden de encender el mot
 	 return 0;
 	}
 	
+> Archivo main.c con punteros
+
+	#include "mylib.h"
+
+	int main() {
+  	  nivel_t config;
+  	  estados_t estado = OFF;
+  	  estados_t (*fsm[])(nivel_t) = {apagar_bomba_f, encender_bomba_f}
+ 	   config = start_f();
+ 	   while(1) estado = (*fsm[estado])(config);
+ 	 return 0;
+	}
+
 > Archivo config.conf
 
 			# nivel que debe de tener el tanque de agua
